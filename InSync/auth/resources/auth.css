@@ -1,0 +1,259 @@
+@import url("../../resources/base.css");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* background-color: var(--light-green); */
+  background-color: var(--light-yellow);
+  color: #333;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+}
+
+/* .logo-link {
+  position: absolute;
+  top: 10%; /*needs to be 10% so it's not cut off*/
+
+/* left: 0%;
+  display: flex;
+  align-items: center;
+  text-decoration: none; */
+/* } */
+.logo-image {
+  width: 13rem;
+  height: auto;
+}
+.logo-container {
+  position: absolute;
+  padding-top: 1%;
+  display: flex;
+  align-items: center; /* Aligns image and text vertically */
+  width: 50%;
+}
+/* .logo-link {
+  font-size: 3em;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: left;
+  font-family: "Fira Sans";
+  color: black;
+} */
+
+/* Star image */
+/* .logo-image {
+  width: 20%; /* Adjusted the percentage  to be smaller on page*/
+/* height: auto;
+  margin-top: -5%; */
+/* } */
+*/ */ #title {
+  font-size: 100px;
+  font-weight: bold;
+  /* margin-bottom: -1%; */
+}
+
+#landingDescription {
+  font-size: 2vw;
+}
+
+.button-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  background-color: var(--light-teal);
+  color: white;
+  padding: 1% 2%;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom: 2%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+.landingSign,
+.landingLog {
+  font-size: 2.5vw;
+}
+
+button:hover {
+  background-color: var(--teal); /* Button hover color */
+}
+
+/* Centering only the login section */
+.login-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.login-container header h1,
+.signup-container header h1 {
+  color: var(--teal);
+  /* color:black; */
+  font-size: 3.6vw;
+  font-weight: bold;
+  margin-bottom: 2.5%;
+}
+#already {
+  font-size: calc(0.9em + 0.4vw);
+  text-align: start;
+  margin-left: 7%;
+}
+#already a {
+  color: black;
+}
+#notyet {
+  font-size: calc(0.9em + 0.4vw);
+  text-align: start;
+}
+#notyet a {
+  color: black;
+}
+h1 {
+  font-weight: bold;
+  font-size: calc(2em + 0.8vw);
+  color: rgb(6, 60, 80);
+}
+.login-container form,
+.signup-container form {
+  background-color: var(--light-green); /*Light green background*/
+  border-radius: 2px;
+  padding: 3%;
+  box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: center;
+  margin: 4% 0;
+}
+
+.form-main {
+  padding: 2% 10%;
+}
+.login-container label,
+.signup-container label {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.error-wrapper {
+  background-color: #ef9a9a;
+  border: solid red 3px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 50%;
+  margin: auto;
+  font-size: 1.3em;
+  color: black;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 90%; /* Slightly narrower width for the input fields */
+  padding: 2%;
+  margin-bottom: 3%;
+  margin-top: 0.2rem;
+  font-size: 1.4vw;
+  border: 0;
+  border-bottom: 2px solid black;
+  /* background-color: var(--yellow); */
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus,
+.signup-container input[type="text"]:focus,
+.signup-container input[type="email"]:focus,
+.signup-container input[type="password"]:focus {
+  border-bottom: 2px solid var(--teal); /* Change border color on focus */
+  background-color: var(--light-yellow); 
+  transition: all 0.35s ease-in-out;
+}
+
+.names {
+  display: flex;
+}
+
+.names input {
+  margin: 0 0.5rem;
+}
+
+
+.login-container input[type="submit"],
+.signup-container input[type="submit"] {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--light-teal);
+  color: white;
+  padding: 3% 3%;
+  font-size: 1.6vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-container input[type="submit"]:hover,
+.signup-container input[type="submit"]:hover {
+  background-color: var(--teal);
+}
+
+ul {
+  font-size: 1em;
+  color: gray;
+  list-style: none;
+  margin-left: 1rem;
+  text-align: start;
+  display: none;
+}
+li.check {
+  color: green;
+}
+
+li.check::before {
+  content: "\2714\0020";
+}
+
+li.wrong::before {
+  content: "\2716\0020";
+}
+li.wrong {
+  color: rgb(209, 0, 0);
+}
+
+#submit:disabled {
+  color: #666;
+  background-color: #333;
+}
+
+#submit:disabled:hover {
+  background: #333;
+  box-shadow: none;
+  cursor: default;
+}

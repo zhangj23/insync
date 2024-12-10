@@ -1,0 +1,165 @@
+@import url("../../resources/base.css");
+@import url("nav.css");
+@import url("home.css");
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+main {
+    width: 100%;
+    /* padding: 20px;
+    margin-top:40px; */
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sections {
+    /* gap: 5rem, 2rem;  */
+    min-height: 100%; 
+    /* gap: 30px; */
+}
+
+#chat {
+    /* width: 80%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;*/
+    /* background-color: #96cac6; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px;  */
+    margin-top: 7.2vh;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius:4px;
+
+}
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 7px solid #96cac6;
+    border-radius: 4px;
+    min-height: 60vh;
+}
+
+#messages li {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    /* display: flex;  */
+    position: relative;
+    
+}
+
+#send-message {
+    display: flex;
+}
+
+#chat-txt {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    font-family: 'Fira Sans';
+}
+
+#chat-btn {
+    padding: 10px; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: #96cac6; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-family: 'Fira Sans';
+}
+
+#chat-btn:hover {
+    background-color: #7bb2a8; 
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+    /* margin-right: 5px; */
+    position: absolute; 
+    right: 10px;
+    top: 50%; 
+}
+
+.current-user {
+    text-align: right;
+    background-color: #d1f8d1;
+}
+
+.other-user {
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+#user-list, #group-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 5vh;
+    max-width: 50vh;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    flex: 1;
+    /* background-color: #96cac6; */
+    /* background-color: var(--light-green); */
+    padding: 30px;
+    border-radius:4px ;
+}
+
+.user-btn, .group-btn {
+    width: 100%;
+    /* padding: 10px; */
+    text-align: left;
+    /* border: 10px solid var(--light-green); */
+    border: 10px solid #96cac6;
+    border-radius: 4px;
+    /* background-color: var(--light-green); */
+    background-color: #96cac6;
+    cursor: pointer;
+    font-family: "Fira Sans";
+    font-size: 16px;
+}
+
+.user-btn:hover, .group-btn:hover {
+    border-radius: 4px;
+    font-weight:500 ;
+    background-color: var(--light-green);
+}
+
+#chat-box{
+    flex:2;
+    max-width: 80vh;
+    
+}
+
+.start-chat-message{
+    color: grey; 
+}
+
+.group-btn{
+    display: flex;
+    flex-direction: column;
+}
+#send-message {
+    display: flex;
+    width: 100%; /* Ensure the form spans the full width of the chat box */
+    gap: 10px; /* Optional: Adds spacing between the input and button */
+}

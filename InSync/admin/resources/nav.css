@@ -1,0 +1,150 @@
+@import url("../../resources/base.css");
+
+/* Navbar container */
+nav {
+  background-color: var(--yellow);
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Logo settings */
+.logo-image {
+  width: 4rem;
+}
+
+.logo-link {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.logo-link a {
+  padding: 0;
+}
+
+#open-nav {
+  position: absolute;
+  width: 2.5rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Set a fixed width for images to ensure proper text alignment */
+nav ul li img {
+  width: 3rem;
+  margin-right: 1rem;
+  /* Space between the image and text */
+  flex-shrink: 0;
+  /* Prevent the image from shrinking */
+}
+
+/* Main button and link styling */
+nav ul li button,
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  flex-grow: 1;
+  /* Take up remaining space */
+  text-align: left;
+  /* Align the text to the left */
+  padding: 0.5rem 1rem;
+  /* Uniform padding for consistent spacing */
+}
+
+/* Basic styling to remove default list behavior */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Nav links container */
+.nav-links {
+  padding: 2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+/* Ensure consistent alignment for list items and add spacing */
+nav ul li {
+  position: relative;
+  margin-bottom: 3rem;
+  /* Increased vertical spacing between navbar items */
+  /* display: flex; */
+  align-items: center;
+}
+
+/* Ensure dropdowns expand the navbar vertically */
+.dropdown {
+  display: none;
+  /* Hidden by default */
+  position: relative;
+  /* Allow it to push content below */
+  background-color: var(--yellow);
+  /* Ensure it matches the navbar color */
+  padding: 0;
+  /* No extra padding */
+  margin: 0;
+  /* No extra margin */
+  border: none;
+  /* No border to make it part of the navbar */
+  width: 100%;
+  /* Ensure it matches the width of the parent */
+}
+
+/* Dropdown items */
+.dropdown li {
+  margin: 0;
+  /* Consistent spacing */
+  padding: 0;
+  /* Consistent spacing */
+}
+
+/* Dropdown links */
+.dropdown li a {
+  display: flex;
+  /* Use flex for dropdown items */
+  align-items: center;
+  /* Center align the content */
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  padding: 0.5rem 1rem;
+  /* Adjust padding for dropdown links */
+  margin-left: 3.5rem;
+  /* Indent dropdown items to align with the main items */
+}
+
+.dropdown li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Subtle hover effect */
+}
+
+.dropdown-icon {
+  margin-left: auto;
+  display: flex;
+}
+
+/* Styling for the button to adjust when dropdowns are visible */
+.nav-button[data-open="true"] + .dropdown {
+  display: block;
+  /* Show the dropdown when data-open is true */
+}
+
+/* Additional container styling */
+.sections {
+  display: flex;
+}
+
+#calendar-list {
+  padding-left: 0.3rem;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InSync - Landing Page</title>
+
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="./InSync/resources/landing.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <div class="logo-wrapper">
+          <img src="./InSync/public/logostar.png" alt="Logo" />
+          <span>InSync</span>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="./InSync/auth/login.php" class = "log-link">Log in</a>
+        <a href="./InSync/auth/signUp.php" class = "sign-link">Sign up</a>
+      </div>
+    </nav>
+    <main>
+      <div class="graphic-wrapper">
+        <div class="graphic-main">
+          <div class="left-graphic">
+            <div class="left-graphic-wrapper">
+              <div class="left-graphic-phrase">
+                <h1>Connect</h1>
+                <h1>with InSync</h1>
+              </div>
+
+              <a href="InSync/auth/signUp.php">Register now</a>
+            </div>
+          </div>
+          <div class="right-graphic">
+            <img src="InSync/public/findCircleGraphic.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div id="connect" class="card-wrapper">
+          <h2>Connect</h2>
+          <p class = "descrip-text">
+            Fostering meaningful connections and collaborative learning among students has become 
+            increasingly crucial. Students can have a difficult time transitioning to the college lifestyle.
+            Through InSync, we aim to 
+            create a community that will enable students to find and connect with people who share similar academic 
+            and extracurricular interests.
+          </p>
+        </div>
+        <div id="match" class="card-wrapper">
+          <h2>Match</h2>
+          <p id="scroll-trigger" class = "descrip-text">
+            Discover new connections with our student matching feature! After filling out 
+            a brief interest form, we use your preferences, hobbies, and academic goals to
+            pair you with like-minded peers. Whether you're looking for study partners,
+            collaborative projects, or shared interests, our matching system helps you 
+            find the perfect fit for a more engaging and rewarding student experience.
+          </p>
+        </div>
+        <div id="events" class="card-wrapper">
+          <h2>Find Events</h2>
+          <p class = "descrip-text">
+            Never miss out on exciting opportunities with our event-finding feature!
+            Tailored to your interests, this tool helps you discover upcoming campus events,
+            workshops, and activities that match your preferences. Whether you're into 
+            academics, social events, or extracurriculars, easily find and join events 
+            that align with your passions and goals.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./InSync/scripts/landing.js"></script>
+  </body>
+</html>

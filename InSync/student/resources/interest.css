@@ -1,0 +1,88 @@
+@import url("../../resources/base.css");
+@import url("nav.css");
+@import url("../../resources/tags.css");
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+main {
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  align-items: center;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_section {
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.formSection {
+  border-radius: 5px;
+  background-color: #96cac6;
+  padding: 1rem;
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.1);
+  /* overflow-y: auto; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.formSection h4 {
+  font-size: 18px;
+}
+
+.formSectionWrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+.form-item {
+  border-radius: 9px;
+  padding: 2rem 2rem;
+  background-color: var(--light-green);
+}
+
+.selected-items {
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+input[type="submit"] {
+  padding: 10px 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: var(--light-green);
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Fira Sans";
+}
+
+input[type="submit"]:hover {
+  background-color: #96cac6; /* Darker shade for hover effect */
+}
+h1 {
+  font-size: 3em;
+  margin: 0rem 1.3rem;
+  padding-bottom: 25px;
+}
+
+.select-container {
+  width: 100%;
+}
+
+label {
+  font-size: 2em;
+}

@@ -1,0 +1,67 @@
+@import url("../../resources/base.css");
+@import url("nav.css");
+@import url("../../resources/tags.css");
+
+main {
+  width: 100%;
+}
+.club-contents {
+  display: flex;
+  margin: auto;
+  min-height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 1rem;
+}
+
+.club-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+#image {
+  object-fit: contain;
+  width: 30vw;
+  border-radius: 100%;
+  border: 10px solid black;
+  box-shadow: 5px 10px 10px gray;
+  /* border: 5px solid black; */
+}
+
+.club-information-wrapper {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  /* background-color: var(--light-teal); */
+  height: 100vh;
+}
+
+.club-information {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-information h2 {
+  margin-bottom: 0;
+}
+/* .vertical-line {
+  border-left: 2px solid gray;
+  height: 80vh;
+} */
+
+hr {
+  width: 100%;
+}
+
+.select-container {
+  width: 100%;
+}

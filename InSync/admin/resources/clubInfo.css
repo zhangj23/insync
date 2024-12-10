@@ -1,0 +1,218 @@
+@import url("../../resources/base.css");
+@import url("nav.css");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 2rem;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  width: 60%;
+  height: 100%;
+}
+
+.left form {
+  width: 98%;
+  margin: 1rem auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.right {
+  background-color: var(--sage-green);
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 15rem;
+  margin-right: 10%;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+input,
+textarea {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 50%;
+  padding: 1.5% 2%;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+
+#submit {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 1.5% 3%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  border-radius: 5px;
+  border: 1px solid var(--teal);
+  margin: 3% auto;
+  background-color: var(--light-teal);
+  cursor: pointer;
+}
+
+.right h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.right img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+#logout {
+  margin-left: auto;
+  padding: 1rem;
+}
+.right a {
+  color: #333;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.select-container {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+}
+
+.custom-select {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+}
+
+.select-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.select-option:hover {
+  background-color: #f0f0f0;
+}
+
+.select-option.selected {
+  background-color: #e3e3e3;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected-value {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.selected-items {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selected-tag {
+  background-color: #e3e3e3;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remove-tag {
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+}
+
+.remove-tag:hover {
+  color: #ff0000;
+}
+
+.selection-results {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: none; /* Hidden by default */
+}
+
+.selection-results h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.selection-results ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.selection-results li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.selection-results li:last-child {
+  border-bottom: none;
+}
+.sections {
+  display: flex;
+  flex-direction: row; /* Stack navbar and main content */
+  min-height: 100%; /* Ensure it spans the full height */
+}
